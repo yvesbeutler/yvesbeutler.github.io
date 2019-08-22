@@ -1,0 +1,49 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Playfair+Display:400,700&display=swap');
+
+$primary: #FC5162;
+$secondary: #292929;
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 42px;
+}
+
+section {
+    height: 100vh;
+}
+
+.Wrapper {
+    position: relative;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Intro {
+    background-color: $primary;
+}
+
+.About {
+    background-color: $primary;
+}
+
+.Projects {
+    background-color: $secondary;
+    @include media-breakpoint-down(sm) {
+        background-color: blue;
+    }
+}
+
+.Contact {
+    background-color: $secondary;
+    height: 50vh;
+}
