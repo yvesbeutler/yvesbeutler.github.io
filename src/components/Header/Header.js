@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { t } from 'react-multi-lang';
+import Logo from './Logo';
 import './Header.scss';
 
-export default class Header extends Component {
-    render() {
-        return (
+function Header() {
+    return (
         <header className="Header">
             <div className="Caption">
-                in data I trust
+                {t('header.caption')}
             </div>
+            <Logo />
             <div className="Navigation">
                 <ul>
                     <li><a href="#intro">Intro</a></li>
@@ -16,6 +18,8 @@ export default class Header extends Component {
                 </ul>
             </div>
         </header>
-        )
-    }
-}
+    );
+  }
+  
+  export default Header;
+  

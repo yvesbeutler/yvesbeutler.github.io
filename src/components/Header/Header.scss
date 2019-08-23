@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .Header {
     background-color: #292929;
     height: 100vh;
@@ -7,5 +9,9 @@
 .Caption {
     padding-top: 40px;
     text-transform: uppercase;
-    color: #22b1b4;
+    color: $primary;
+}
+
+.Logo {
+    height: 200px;
 }

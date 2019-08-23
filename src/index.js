@@ -1,8 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
+
+// Translation Higher Order Component
+import { setDefaultTranslations, setDefaultLanguage } from 'react-multi-lang'
+import en from './assets/languages/en.json';
+import lotr from './assets/languages/lotr.json';
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+setDefaultTranslations({en, lotr});
+setDefaultLanguage('en');
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

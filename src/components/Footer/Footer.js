@@ -1,11 +1,13 @@
 import React from 'react';
-import Icon from '../Icon/Icon';
+import { t } from 'react-multi-lang';
+
+import Icon from './Icon';
 import './Footer.scss';
 
 function Footer() {
   return (
     <footer className="Footer">
-        <h1>I'll write you back as soon as I can. I promise.</h1>
+        <h1>{t('footer.headline')}</h1>
         <a href="mailto:yvesbeutler93@gmail.com">
             <Icon type="gmail" />
         </a>
@@ -21,8 +23,8 @@ function Footer() {
         <a href="https://stackoverflow.com/users/1278562/yves-beutler">
             <Icon type="stackoverflow" />
         </a>
-        <div class="Copyrights">
-        © 2019 Yves Beutler. All rights reserved.
+        <div className="Copyrights">
+            {t('footer.copyright')}
         </div>
     </footer>
   );

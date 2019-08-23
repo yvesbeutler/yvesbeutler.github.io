@@ -1,14 +1,16 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "./variables.scss";
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Playfair+Display:400,700&display=swap');
-
-$primary: #FC5162;
-$secondary: #292929;
 
 html {
     scroll-behavior: smooth;
     font-family: 'Libre Baskerville', serif;
+}
+
+body {
+    margin: 0;
 }
 
 h1 {
@@ -45,5 +47,5 @@ section {
 
 .Contact {
     background-color: $secondary;
-    height: 50vh;
+    // height: 50vh;
 }

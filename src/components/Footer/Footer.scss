@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .Footer {
     color: white;
     text-align: center;
@@ -15,14 +17,14 @@
     }
 
     svg:hover {
-        fill: #FC5162;
+        fill: $primary;
     }
 
     .Copyrights {
         position: absolute;
         bottom: 20px;
         width: 100%;
-        color: #FC5162;
+        color: $primary;
     }
 }
 
