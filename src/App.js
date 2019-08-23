@@ -1,37 +1,37 @@
-import React, { Component } from 'react';
-import { setLanguage, translate } from 'react-multi-lang';
+import React from 'react';
+import { translate, t } from 'react-multi-lang';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import ContentWrapper from './components/Content/ContentWrapper';
+import Introduction from './components/Content/Introduction';
 import './App.scss';
 
-class App extends Component {
-  
-  changeLanguage(language) {
-    setLanguage(language);
-  }
-
-  render() {
+function App() {
     return (
-      <div className="App">
-        <div className="Wrapper">
-          <Header />
-          <section id="intro" className="Intro">
-            <button onClick={() => this.changeLanguage('en')}>en</button>
-            <button onClick={() => this.changeLanguage('lotr')}>lotr</button>
-          </section>
-          <section id="projects" className="Projects">
-            projects
-          </section>
-          <section id="about" className="About">
-            about
-          </section>
-          <section id="contact" className="Contact">
-            <Footer />
-          </section>
+        <div className="App">
+            <div className="Wrapper">
+                <Header />
+                <section id="intro" className="Intro">
+                    <ContentWrapper name={t('nav.intro')} layout="left">
+                        <Introduction />
+                    </ContentWrapper>
+                </section>
+                <section id="projects" className="Projects">
+                    <ContentWrapper name={t('nav.projects')} layout="left">
+                        <Introduction />
+                    </ContentWrapper>
+                </section>
+                <section id="about" className="About">
+                    <ContentWrapper name={t('nav.about')} layout="left">
+                        <Introduction />
+                    </ContentWrapper>
+                </section>
+                <section id="contact" className="Contact">
+                    <Footer />
+                </section>
+            </div>
         </div>
-      </div>
-    );
-  }
+    )
 }
 
 export default translate(App);

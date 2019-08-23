@@ -1,0 +1,15 @@
+.Navigation {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.Navigation > li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.Navigation > li > a {
+    font-weight: 800;
+    font-size: 18px;
+}

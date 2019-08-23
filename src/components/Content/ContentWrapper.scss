@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+.FlexBox {
+    display: flex;
+}
+
+.Main {
+    width: 50vw;
+    text-align: center;
+}
+
+.Content {
+    width: 45vw;
+    padding-left: 5vw;
+    background-color: $white;
+    min-height: 100vh;
+}

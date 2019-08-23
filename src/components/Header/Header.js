@@ -1,7 +1,12 @@
 import React from 'react';
-import { t } from 'react-multi-lang';
+import { setLanguage, t } from 'react-multi-lang';
+import Navigation from '../Navigation/Navigation';
 import Logo from './Logo';
 import './Header.scss';
+
+function changeLanguage(language) {
+  setLanguage(language);
+}
 
 function Header() {
     return (
@@ -10,13 +15,11 @@ function Header() {
                 {t('header.caption')}
             </div>
             <Logo />
-            <div className="Navigation">
-                <ul>
-                    <li><a href="#intro">Intro</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
+            <div className="Switch">
+                <button onClick={() => changeLanguage('en')}>en</button>
+                <button onClick={() => changeLanguage('lotr')}>lotr</button>
             </div>
+            <Navigation />
         </header>
     );
   }

@@ -2,11 +2,11 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins/breakpoints";
 @import "./variables.scss";
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Playfair+Display:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Playfair+Display:400,700&display=swap');
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -17,6 +17,18 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 42px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+a, a:hover, a:visited, a:active, a:link {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: white;
 }
 
 section {
@@ -35,7 +47,7 @@ section {
 }
 
 .About {
-    background-color: $primary;
+    background-color: $white;
 }
 
 .Projects {
@@ -47,5 +59,4 @@ section {
 
 .Contact {
     background-color: $secondary;
-    // height: 50vh;
 }

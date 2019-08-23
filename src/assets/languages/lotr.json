@@ -5,5 +5,10 @@
   "footer": {
     "headline": "Gondor calls for aid! And Rohan will answer.",
     "copyright": "© 2019 Yves Beutler. All rights reserved."
+  },
+  "nav": {
+    "intro": "Intro",
+    "projects": "Battles",
+    "about": "Heir"
   }
 }
