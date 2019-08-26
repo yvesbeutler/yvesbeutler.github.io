@@ -21,8 +21,8 @@ function App() {
                         <Introduction />
                     </ContentWrapper>
                 </section>
-                <section id="about" className="About">
-                    <ContentWrapper name={t('nav.about')} layout="left">
+                <section id="cv" className="About">
+                    <ContentWrapper name={t('nav.cv')} layout="left">
                         <Introduction />
                     </ContentWrapper>
                 </section>

@@ -23,16 +23,13 @@ h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
     font-size: 36px;
+    margin: 0 30px;
 }
 
 a, a:hover, a:visited, a:active, a:link {
     text-decoration: none;
     text-transform: lowercase;
-    color: white;
-}
-
-section {
-    height: 100vh;
+    color: black;
 }
 
 .Wrapper {

@@ -7,8 +7,9 @@
     "copyright": "© 2019 Yves Beutler. All rights reserved."
   },
   "nav": {
-    "intro": "Intro",
-    "projects": "Battles",
-    "about": "Heir"
+    "intro": "intro",
+    "projects": "battles",
+    "cv": "family tree",
+    "contact": "horn of Helm Hammerhand"
   }
 }

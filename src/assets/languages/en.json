@@ -9,6 +9,7 @@
   "nav": {
     "intro": "Intro",
     "projects": "Projects",
-    "about": "About"
+    "cv": "Curriculum vitae",
+    "contact": "Contact"
   }
 }

@@ -1,17 +1,45 @@
+@import "../../..//node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins/breakpoints";
 @import '../../variables.scss';
 
-.FlexBox {
-    display: flex;
-}
-
 .Main {
-    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
 }
 
 .Content {
-    width: 45vw;
-    padding-left: 5vw;
     background-color: $white;
-    min-height: 100vh;
+}
+
+.Image {
+    margin-top: 45vh;
+}
+
+@include media-breakpoint-up(lg) {
+    .FlexBox {
+        display: flex;
+    }
+
+    .Main {
+        width: 50vw;
+    }
+
+    .Content {
+        width: 45vw;
+        padding-left: 5vw;
+        min-height: 100vh;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .Main {
+        min-height: 100vh;
+    }
+
+    .Content {
+        min-height: 100vh;
+    }
 }

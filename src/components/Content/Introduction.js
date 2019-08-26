@@ -4,7 +4,7 @@ import React from 'react';
 function Introduction() {
     return (
       <div className="Introduction">
-          Hi. My name is Yves and I'm an aspiring data scientist.
+          Hi. This is just random content.
       </div>
     )
   }
