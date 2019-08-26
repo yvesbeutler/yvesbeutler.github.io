@@ -4,13 +4,13 @@ import './ContentWrapper.scss';
 
 export default class ContentWrapper extends Component {
     render() {
-        const { name, color, children } = this.props;
+        const { name, children } = this.props;
 
         return (
             <div className="FlexBox">
                 <div className="Main">
                     <h2 className="Image">{ name }</h2>
-                    <Navigation theme={color} />
+                    <Navigation />
                 </div>
                 <div className="Content">
                     { children }

@@ -17,6 +17,7 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 42px;
+    margin: 0 30px;
 }
 
 h2 {
@@ -29,7 +30,6 @@ h2 {
 a, a:hover, a:visited, a:active, a:link {
     text-decoration: none;
     text-transform: lowercase;
-    color: black;
 }
 
 .Wrapper {
@@ -43,15 +43,12 @@ a, a:hover, a:visited, a:active, a:link {
     background-color: $primary;
 }
 
-.About {
-    background-color: $white;
+.CV {
+    background-color: $secondary;
 }
 
 .Projects {
-    background-color: $secondary;
-    @include media-breakpoint-down(sm) {
-        background-color: blue;
-    }
+    background-color: $white;
 }
 
 .Contact {

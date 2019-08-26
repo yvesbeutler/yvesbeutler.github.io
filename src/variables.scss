@@ -2,3 +2,13 @@ $primary: #F93030;
 $secondary: #292929;
 $black: #000000;
 $white: #FFFFFF;
+
+@mixin NavColors($link, $border) {
+    a, a:hover, a:visited, a:active, a:link {
+        color: $link;
+    }
+
+    li:hover {
+        border-bottom: 2px solid $border;
+    }
+}

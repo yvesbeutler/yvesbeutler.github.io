@@ -12,17 +12,22 @@ function App() {
             <div className="Wrapper">
                 <Header />
                 <section id="intro" className="Intro">
-                    <ContentWrapper name={t('nav.intro')} layout="left">
+                    <ContentWrapper name={t('nav.intro')}>
                         <Introduction />
                     </ContentWrapper>
                 </section>
                 <section id="projects" className="Projects">
-                    <ContentWrapper name={t('nav.projects')} layout="left">
+                    <ContentWrapper name={t('nav.projects')}>
                         <Introduction />
                     </ContentWrapper>
                 </section>
-                <section id="cv" className="About">
-                    <ContentWrapper name={t('nav.cv')} layout="left">
+                <section id="cv" className="CV">
+                    <ContentWrapper name={t('nav.cv')}>
+                        <Introduction />
+                    </ContentWrapper>
+                </section>
+                <section id="about" className="Intro">
+                    <ContentWrapper name={t('nav.about')}>
                         <Introduction />
                     </ContentWrapper>
                 </section>

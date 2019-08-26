@@ -1,24 +1,50 @@
+@import "../../..//node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins/breakpoints";
 @import '../../variables.scss';
 
-.Navigation {
-    display: inline;
-    margin: 0;
-    padding: 0 0 30px 0;
-}
-
-.Navigation > li {
-    display: inline;
-    margin: 0 10px;
-
-    &:hover {
-        border-bottom: 3px solid $black;
-        padding-bottom: 10px;
-        cursor: pointer;
+@include media-breakpoint-down(md) {
+    .Navigation {
+        display: none;
     }
 }
 
-.Navigation > li > a {
-    font-weight: 800;
-    font-size: 18px;
-    padding-bottom: 10px;
+@include media-breakpoint-up(lg) {
+    .Header .Navigation {
+        @include NavColors($primary, $white);
+    }
+
+    .Intro .Navigation {
+        @include NavColors($black, $white);
+    }
+
+    .CV .Navigation {
+        @include NavColors($primary, $white);
+    }
+
+    .Projects .Navigation {
+        @include NavColors($black, $primary);
+    }
+
+    .Navigation {
+        display: inline;
+        margin: 0;
+        padding: 0 0 30px 0;
+    }
+    
+    .Navigation > li {
+        display: inline;
+        margin: 0 10px;
+    
+        &:hover {
+            padding-bottom: 10px;
+            cursor: pointer;
+        }
+    }
+    
+    .Navigation > li > a {
+        font-weight: 800;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
 }

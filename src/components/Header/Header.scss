@@ -4,6 +4,13 @@
     background-color: #292929;
     height: 100vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .Navigation {
+        color: $primary;
+    }
 }
 
 .Caption {
