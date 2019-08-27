@@ -18,17 +18,17 @@ function App() {
                 </section>
                 <section id="projects" className="Projects">
                     <ContentWrapper name={t('nav.projects')}>
-                        <Introduction />
+                        about my projects
                     </ContentWrapper>
                 </section>
                 <section id="cv" className="CV">
                     <ContentWrapper name={t('nav.cv')}>
-                        <Introduction />
+                        here comes my cv
                     </ContentWrapper>
                 </section>
                 <section id="about" className="Intro">
                     <ContentWrapper name={t('nav.about')}>
-                        <Introduction />
+                        i'm going to tell you something about me..
                     </ContentWrapper>
                 </section>
                 <section id="contact" className="Contact">

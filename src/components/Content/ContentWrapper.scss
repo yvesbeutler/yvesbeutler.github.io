@@ -3,23 +3,26 @@
 @import "../../../node_modules/bootstrap/scss/mixins/breakpoints";
 @import '../../variables.scss';
 
+// fixes a react-sticky bug
+.Flexbox > div > div {
+    width: 50vw;
+}
+
 .Main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    height: 100vh;
 }
 
 .Content {
     background-color: $white;
-}
-
-.Image {
-    margin-top: 45vh;
+    min-height: 100vh;
 }
 
 @include media-breakpoint-up(lg) {
-    .FlexBox {
+    .Flexbox {
         display: flex;
     }
 
@@ -30,16 +33,5 @@
     .Content {
         width: 45vw;
         padding-left: 5vw;
-        min-height: 100vh;
-    }
-}
-
-@include media-breakpoint-down(md) {
-    .Main {
-        min-height: 100vh;
-    }
-
-    .Content {
-        min-height: 100vh;
     }
 }
