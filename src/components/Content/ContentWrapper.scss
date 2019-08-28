@@ -4,8 +4,9 @@
 @import '../../variables.scss';
 
 // fixes a react-sticky bug
-.Flexbox > div > div {
+.Flexbox > div {
     width: 50vw;
+    flex-shrink: 0;
 }
 
 .Main {
@@ -14,6 +15,10 @@
     justify-content: space-between;
     text-align: center;
     height: 100vh;
+
+    h2 {
+        padding-top: 25vh;
+    }
 }
 
 .Content {
@@ -31,7 +36,6 @@
     }
 
     .Content {
-        width: 45vw;
-        padding-left: 5vw;
+        padding: 5vh 5vw;
     }
 }
