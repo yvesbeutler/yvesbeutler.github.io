@@ -3,12 +3,6 @@
 @import "../../../node_modules/bootstrap/scss/mixins/breakpoints";
 @import '../../variables.scss';
 
-// fixes a react-sticky bug
-.Flexbox > div {
-    width: 50vw;
-    flex-shrink: 0;
-}
-
 .Main {
     display: flex;
     flex-direction: column;
@@ -29,6 +23,11 @@
 @include media-breakpoint-up(lg) {
     .Flexbox {
         display: flex;
+
+        & > div {
+            width: 50vw;
+            flex-shrink: 0;
+        }
     }
 
     .Main {
