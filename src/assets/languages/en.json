@@ -1,6 +1,6 @@
 {
   "header": {
-    "caption": "in Data I trust"
+    "caption": "In data he trusts"
   },
   "footer": {
     "headline": "I'll write you back as soon as I can. I promise.",
@@ -10,7 +10,7 @@
     "intro": "Intro",
     "projects": "Projects",
     "cv": "Curriculum vitae",
-    "about": "About",
+    "gallery": "Gallery",
     "contact": "Contact"
   }
 }
