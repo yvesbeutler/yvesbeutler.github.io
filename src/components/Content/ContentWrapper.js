@@ -7,6 +7,7 @@ import './ContentWrapper.scss';
 export default class ContentWrapper extends Component {
     render() {
         const { name, fullWidth = false, children } = this.props;
+        const contentClass = fullWidth ? 'FullWidth' : 'Content';
 
         // don't use sticky on mobile devices
         if (isMobile) {
@@ -15,7 +16,7 @@ export default class ContentWrapper extends Component {
                     <div className="Main">
                         <h2 className="Image">{ name }</h2>
                     </div>
-                    <div className={fullWidth ? "FullWidth" : "Content"}>
+                    <div className={contentClass}>
                         { children }
                     </div>
                 </div>
@@ -33,7 +34,7 @@ export default class ContentWrapper extends Component {
                             </div>
                         )}
                     </Sticky>
-                    <div className={fullWidth ? "FullWidth" : "Content"}>
+                    <div className={contentClass}>
                         { children }
                     </div>
                 </div>

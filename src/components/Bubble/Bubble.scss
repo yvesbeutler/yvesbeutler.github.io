@@ -1,0 +1,26 @@
+@import '../../variables.scss';
+
+.Bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70vh;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    transition: opacity $transactionSpeed/1.5;
+    opacity: 0;
+    background-color: $primary;
+    border-radius: 50%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.Project:hover {
+    & > .Bubble {
+        opacity: 1;
+            transition: opacity $transactionSpeed;
+    }
+}

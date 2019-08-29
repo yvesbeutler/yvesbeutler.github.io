@@ -37,7 +37,6 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    // justify-content: center;
     flex-direction: column;
     transition: opacity $transactionSpeed;
     text-align: center;
@@ -46,10 +45,10 @@
     &:hover {
         opacity: 0.7;
 
-        & > .Bubble {
-            opacity: 1;
-            transition: opacity $transactionSpeed;
-        }
+        // & > .Bubble {
+        //     opacity: 1;
+        //     transition: opacity $transactionSpeed;
+        // }
     }
 
     .ProjectInfo {
@@ -61,24 +60,6 @@
         font-family: 'Playfair Display', serif;
         font-size: 18px;
         border-radius: 3px;
-    }
-
-    .Bubble {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 70vh;
-        padding: 10px;
-        width: 100px;
-        height: 100px;
-        transition: opacity $transactionSpeed/1.5;
-        opacity: 0;
-        background-color: $primary;
-        border-radius: 50%;
-
-        &:hover {
-            cursor: pointer;
-        }
     }
 }
 
@@ -94,9 +75,5 @@
 
     .Main {
         width: 50vw;
-    }
-
-    .Content {
-        // padding: 5vh 5vw;
     }
 }

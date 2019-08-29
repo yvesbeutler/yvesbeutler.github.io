@@ -12,5 +12,8 @@
     "cv": "Curriculum vitae",
     "gallery": "Gallery",
     "contact": "Contact"
+  },
+  "projects": {
+    "bubble": "show details"
   }
 }
