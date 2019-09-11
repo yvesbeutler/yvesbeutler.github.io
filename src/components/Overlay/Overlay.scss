@@ -1,7 +1,8 @@
-.Overlay .Hidden {
+.Hidden {
     display: none;
+    transition: display 500ms;
 }
+
 .Overlay {
-    z-index: 200;
     height: 100vh;
 }
