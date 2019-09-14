@@ -14,6 +14,18 @@
     "contact": "Contact"
   },
   "projects": {
+    "bachelor": {
+      "title": "bachelor thesis",
+      "content": "this is my bachelor thesis I did during my time at mobiliar."
+    },
+    "zenji": {
+      "title": "zenji ai",
+      "content": "I created an AI for the popular zenji video game."
+    },
+    "microspot": {
+      "title": "microspot.ch",
+      "content": "Some website I worked on, mostly tracking"
+    },
     "bubble": "show details"
   }
 }

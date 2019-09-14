@@ -31,38 +31,6 @@
     margin-bottom: 50px;
 }
 
-.Project {
-    background-image: url('http://place-hoff.com/2000/2000');
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    transition: opacity $transactionSpeed;
-    text-align: center;
-    position: relative;
-
-    &:hover {
-        opacity: 0.7;
-
-        // & > .Bubble {
-        //     opacity: 1;
-        //     transition: opacity $transactionSpeed;
-        // }
-    }
-
-    .ProjectInfo {
-        background-color: $black;
-        color: white;
-        padding: 20px;
-        position: absolute;
-        top: 10%;
-        font-family: 'Playfair Display', serif;
-        font-size: 18px;
-        border-radius: 3px;
-    }
-}
-
 @include media-breakpoint-up(lg) {
     .Flexbox {
         display: flex;

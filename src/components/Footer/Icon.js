@@ -24,12 +24,15 @@ const IconTypes = {
     ),
     stackoverflow: (
         <path d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm-8.512 8.272l5.532 3.243-.686 1.162-5.533-3.243.687-1.162zm-1.456 3.113l6.185 1.739-.332 1.23-6.204-1.667.351-1.302zm-.672 2.813l6.498.65-.117 1.28-6.504-.586.123-1.344zm-.193 2.469h6.667V18H8.167v-1.333zM17 20H6v-7h1v6h9v-6h1v7zm-.852-8.704l-3.56-5.219 1.115-.76 3.559 5.219-1.114.76zm1.356-.841l-1.08-6.224L17.752 4l1.082 6.224-1.33.231z"/>
+    ),
+    close: (
+        <path d="M12 11.293L22.293 1l.707.707L12.707 12 23 22.293l-.707.707L12 12.707 1.707 23 1 22.293 11.293 12 1 1.707 1.707 1 12 11.293z"/>
     )
 }
 
-function Icon({ type = 'linkedIn'}) {
+function Icon({ type = 'close', action = () => {}}) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fillRule="evenodd" clipRule="evenodd">
+    <svg xmlns="http://www.w3.org/2000/svg" onClick={() => action()}viewBox="0 0 24 24" fillRule="evenodd" clipRule="evenodd">
         {IconTypes[type]}
     </svg>
   );

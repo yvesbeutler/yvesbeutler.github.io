@@ -1,0 +1,60 @@
+@import '../../variables.scss';
+
+.Project {
+    width: 50vw;
+    height: 100vh;
+
+
+    .ProjectHead {
+        width: 50vw;
+        height: 100vh;
+        background-image: url('http://place-hoff.com/2000/2000');
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: opacity $transactionSpeed;
+        text-align: center;
+        position: relative;
+    
+        &:hover {   
+            opacity: 0.7;
+        }
+    }
+
+    .ProjectTitle {
+        background-color: $black;
+        color: white;
+        padding: 20px;
+        position: absolute;
+        top: 10%;
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        border-radius: 3px;
+    }
+}
+
+.Hidden {
+    display: none;
+    transition: display 500ms;
+}
+
+.Overlay {
+    min-height: 100vh;
+    background-color: $white;
+    position: relative;
+
+    & > svg {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 25px;
+        top: 10px;
+        fill: $black;
+    }
+
+    & > svg:hover {
+        fill: $primary;
+        cursor: pointer;
+    }
+
+}
